@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy Solutions - Intelligence Meets Execution</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Synergy Solutions</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 5D Background Elements -->
+    <div class="geometric-bg">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Intelligence Meets Real-World Execution</h1>
+                    <p class="hero-subtitle">Where living systems amplify results, autonomy, and depth</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary">Explore Projects</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-element"></div>
+                    <div class="floating-element"></div>
+                    <div class="floating-element"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Living Systems Portfolio</h2>
+                    <p>Each project is a living system, not just code or product</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Synergy CRM -->
+                    <div class="project-card" data-project="crm">
+                        <div class="project-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Synergy CRM</h3>
+                        <p class="project-tagline">Speak to your business.</p>
+                        <p class="project-desc">Voice-activated CRM system for real-time business control</p>
+                        <div class="project-tags">
+                            <span class="tag">Voice Control</span>
+                            <span class="tag">Real-time</span>
+                            <span class="tag">UAOP</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('crm')">Learn More</button>
+                    </div>
+
+                    <!-- MKP -->
+                    <div class="project-card" data-project="mkp">
+                        <div class="project-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>MKP – My Kitchen Power</h3>
+                        <p class="project-tagline">The smartest kitchen AI chatbot.</p>
+                        <p class="project-desc">Beyond recipes — real-time cooking intelligence</p>
+                        <div class="project-tags">
+                            <span class="tag">AI Assistant</span>
+                            <span class="tag">Real-time</span>
+                            <span class="tag">Voice</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('mkp')">Learn More</button>
+                    </div>
+
+                    <!-- UAOP -->
+                    <div class="project-card" data-project="uaop">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>UAOP</h3>
+                        <p class="project-tagline">Universal Alignment Open Protocol</p>
+                        <p class="project-desc">The foundational intelligence layer behind everything</p>
+                        <div class="project-tags">
+                            <span class="tag">Core Protocol</span>
+                            <span class="tag">Symbolic Logic</span>
+                            <span class="tag">Foundation</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('uaop')">Learn More</button>
+                    </div>
+
+                    <!-- Token C -->
+                    <div class="project-card" data-project="tokenc">
+                        <div class="project-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Token C</h3>
+                        <p class="project-tagline">The coin that breathes from thin air.</p>
+                        <p class="project-desc">Mirage-based value generation without user deposits</p>
+                        <div class="project-tags">
+                            <span class="tag">Smart Contract</span>
+                            <span class="tag">Autonomous</span>
+                            <span class="tag">Experimental</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('tokenc')">Learn More</button>
+                    </div>
+
+                    <!-- TraderBot -->
+                    <div class="project-card" data-project="traderbot">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>TraderBot</h3>
+                        <p class="project-tagline">Built to outthink the manipulators.</p>
+                        <p class="project-desc">AI-driven trading with logic, not hype</p>
+                        <div class="project-tags">
+                            <span class="tag">AI Trading</span>
+                            <span class="tag">Pattern Detection</span>
+                            <span class="tag">Telegram</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('traderbot')">Learn More</button>
+                    </div>
+
+                    <!-- Core Lock -->
+                    <div class="project-card" data-project="corelock">
+                        <div class="project-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Core Lock on Pump.fun</h3>
+                        <p class="project-tagline">Zero-latency launch trap.</p>
+                        <p class="project-desc">Fast-reacting tracker for Pump.fun launches</p>
+                        <div class="project-tags">
+                            <span class="tag">Real-time</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Detection</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('corelock')">Learn More</button>
+                    </div>
+
+                    <!-- FRI -->
+                    <div class="project-card" data-project="fri">
+                        <div class="project-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>FRI</h3>
+                        <p class="project-tagline">Field-Responsive Intelligence</p>
+                        <p class="project-desc">Not AI. Not AGI. Beyond both.</p>
+                        <div class="project-tags">
+                            <span class="tag">Advanced AI</span>
+                            <span class="tag">Field Response</span>
+                            <span class="tag">Core System</span>
+                        </div>
+                        <button class="learn-more-btn" onclick="openModal('fri')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Synergy Solutions</h2>
+                    <p>Welcome to the evolving core of Synergy Solutions — where intelligence meets real-world execution. Each project listed is a living system, not just code or product. Every module is built to amplify real results, autonomy, and depth.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Living Systems</h3>
+                            <p>Not static code, but evolving intelligent systems</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Integrated Architecture</h3>
+                            <p>All systems built on UAOP foundation for seamless integration</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Real-World Impact</h3>
+                            <p>Designed for immediate, practical application and results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Ready to integrate intelligence into your operations?</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@synergysolutions.ai</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>synergysolutions.ai</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals for Project Details -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
